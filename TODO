@@ -1,0 +1,5 @@
+- change gtk-3.00 to orange
+- change install script so that themes install in $HOME/.themes not in /usr/share/themes
+- make sure dark themes are working as well
+- add instruction on how to use the themes without theme manager (i3, add .gtkrc to $HOME?)
+- modify light theme so that dark background is not that dark
