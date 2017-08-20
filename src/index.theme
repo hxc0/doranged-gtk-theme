@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Numix
-Comment=A modern flat theme
+Name=Doranged
+Comment=An orange modern flat theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Numix
+GtkTheme=Doranged
 IconTheme=Numix
-MetacityTheme=Numix
+MetacityTheme=Doranged
 ButtonLayout=:minimize,maximize,close
