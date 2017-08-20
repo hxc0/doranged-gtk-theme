@@ -3,7 +3,9 @@
 @import "functions";
 
 // default color scheme
+//$bg_color: if($variant == "dark", #444, #dedede);
 $bg_color: if($variant == "dark", #444, #dedede);
+//$fg_color: if($variant == "dark", #ddd, #555);
 $fg_color: if($variant == "dark", #ddd, #555);
 $base_color: if($variant == "dark", #333, #fff);
 $text_color: if($variant == "dark", #eee, #333);
@@ -17,7 +19,7 @@ $borders_color: if($variant == 'light', shade($bg_color, .85), shade($bg_color, 
 $borders_edge: if($variant == 'light', transparentize(white, 0.2), transparentize($fg_color, 0.93));
 
 // dark colors
-$dark_bg_color: #444;
+$dark_bg_color: #5f5f5f;
 $dark_fg_color: #eee;
 
 // shadows
@@ -102,7 +104,7 @@ $insensitive_bg_color: mix($bg_color, $base_color, .6);
 $insensitive_borders_color: $borders_color;
 
 //colors for the backdrop state, derived from the main colors.
-$backdrop_base_color: if($variant == 'light', darken($base_color, .01), lighten($base_color, .01));
+$backdrop_base_color: if($variant == 'light', darken($base_color, .01), lighten($base_color, .91));
 $backdrop_text_color: mix($backdrop_base_color, $text_color, .8);
 $backdrop_bg_color: $bg_color;
 $backdrop_fg_color: mix($fg_color, $backdrop_bg_color, .5);
