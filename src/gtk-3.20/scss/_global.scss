@@ -4,9 +4,9 @@
 
 // default color scheme
 //$bg_color: if($variant == "dark", #444, #dedede);
-$bg_color: if($variant == "dark", #444, #dedede);
+$bg_color: if($variant == "dark", #444, #d6d6d6);
 //$fg_color: if($variant == "dark", #ddd, #555);
-$fg_color: if($variant == "dark", #ddd, #555);
+$fg_color: if($variant == "dark", #ddd, #444);
 $base_color: if($variant == "dark", #333, #fff);
 $text_color: if($variant == "dark", #eee, #333);
 $selected_bg_color: #e57b1d;
@@ -33,10 +33,15 @@ $white: #fff;
 $button_border: shade($base_color, .9);
 $entry_border: alpha($dark_shadow, .06);
 
-$scrollbar_bg_color: if($variant == 'light', darken($bg_color, 5%), mix($base_color, $bg_color, .4));
-$scrollbar_slider_color: shade($bg_color, .5);
-$scrollbar_slider_hover_color: shade($bg_color, .3);
-$scrollbar_slider_active_color: if($variant == 'light', darken($selected_bg_color, 5%), lighten($selected_bg_color, 10%));
+// lets try having one scrollbar color
+//$scrollbar_bg_color: if($variant == 'light', darken($bg_color, 5%), mix($base_color, $bg_color, .4));
+//$scrollbar_slider_color: shade($bg_color, .5);
+//$scrollbar_slider_hover_color: shade($bg_color, .3);
+//$scrollbar_slider_active_color: if($variant == 'light', darken($selected_bg_color, 5%), lighten($selected_bg_color, 10%));
+$scrollbar_bg_color: mix(#333, #444, .4);
+$scrollbar_slider_color: shade(#444, .5);
+$scrollbar_slider_hover_color: shade(#444, .3);
+$scrollbar_slider_active_color: lighten(#e57b1d, 10%);
 
 $switch_disabled_bg_color: #d8d8d8;
 $switch_disabled_border_color: #ccc;
