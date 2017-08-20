@@ -3,16 +3,6 @@
 
 Doranged is a Numix-based style where red is replaced with orange accents
 
-## Install It
-
-### Distro Packages
-|Distro|Install Command/Links|
-|:----:|:----:|
-|![arch][arch] &nbsp;![antergos][antergos]|`sudo pacman -S numix-gtk-theme`|
-|![opensuse][opensuse]|[1 Click Install](http://software.opensuse.org/ymp/openSUSE:Factory/standard/numix-gtk-theme.ymp) &nbsp;\|&nbsp; [OBS Repo](http://software.opensuse.org/download.html?project=openSUSE%3AFactory&package=numix-gtk-theme)|
-|![fedora][fedora]|`sudo dnf install numix-gtk-theme`|
-|![debian][debian] &nbsp;![ubuntu][ubuntu]|`sudo apt install numix-gtk-theme`|
-
 ## Build It
 
 First, you need to compile the theme using the [Sass](http://sass-lang.com/) compiler.
@@ -33,21 +23,23 @@ You'll also need the ```glib-compile-schemas``` and  ```gdk-pixbuf-pixdata``` co
 After installing all the dependencies, change to the cloned directory and, run the following in Terminal,
 
 ```sh
-sudo make install
+make install
 ```
+
+This will install the theme in the current user's local .theme directory
 
 To set the theme in GNOME, run the following commands in Terminal,
 
 ```sh
-gsettings set org.gnome.desktop.interface gtk-theme "Numix"
-gsettings set org.gnome.desktop.wm.preferences theme "Numix"
+gsettings set org.gnome.desktop.interface gtk-theme "Doranged"
+gsettings set org.gnome.desktop.wm.preferences theme "Doranged"
 ```
 
 To set the theme in Xfce, run the following commands in Terminal,
 
 ```sh
-xfconf-query -c xsettings -p /Net/ThemeName -s "Numix"
-xfconf-query -c xfwm4 -p /general/theme -s "Numix"
+xfconf-query -c xsettings -p /Net/ThemeName -s "Doranged"
+xfconf-query -c xfwm4 -p /general/theme -s "Doranged"
 ```
 
 ### For contributors
@@ -67,8 +59,6 @@ If you change any assets, you'll need to regenerate the `gtk.gresource.xml` and 
 ### Requirements
 
 GTK+ 3.18 or above
-
-Murrine theme engine
 
 ### Code and license
 
