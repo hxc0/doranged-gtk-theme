@@ -5,3 +5,5 @@
 - add a flag to build either the daark or light theme, or somehow make to swithc between them easier for i3
 - clean up unneeded stuff
 - make light theme with dark scrollbar
+- gtk-2 and gtk-3.0 stuff so it works with everything no tonly firefox :V
+- scrollbar background is too dark!
